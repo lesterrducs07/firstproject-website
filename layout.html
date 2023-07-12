@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<body>
+		<header>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1"
+			<div class="container">
+				<h1 class="logo">LESTER'S WEBPAGE</h1>
+				<strong><nav>
+					<ul class="menu">
+						<li><a href="{{ url_for('home') }}">Home</a></li>
+						<li><a href="{{ url_for('myportfolio') }}">Portfolio</a></li>
+						<li><a href="{{ url_for('about') }}">About</a></li>
+					</ul>
+				</nav></strong>
+			</div>
+		</header>
+		<div class="container">
+			{%block content%}
+			{%endblock%}
+		</div>
+	</body>
+</html>
